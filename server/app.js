@@ -9,7 +9,10 @@ const passport = require("passport");
 require("./config/passport")(passport);
 const cors = require("cors");
 
-// connect to DB
+const corsOptions = {
+  origin: "https://platform-client-rjff.onrender.com",
+};
+
 mongoose
   .connect(process.env.DB_CONNECT, {
     useNewUrlParser: true,
@@ -24,8 +27,9 @@ mongoose
 
 // middlewares
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors(corsOptions));
 app.use("/api/user", authRoute);
 app.use(
   "/api/courses",
