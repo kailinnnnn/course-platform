@@ -49,15 +49,15 @@ router.post("/login", (req, res) => {
   const { error } = loginValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  User.findOne({ email: req.body.email }, function (err, user) {
-    if (err) {
-      res.status(400).send(err);
-    }
-    if (!user) {
-      res.status(401).send("User not found.");
-    } else {
-      user.comparePassword(req.body.password, function (err, isMatch) {
-        if (err) return res.status(400).send(err);
+  User.findOne({ email: req.body.email })
+    .then((user) => {
+      if (!user) {
+        return res.status(401).send("User not found.");
+      }
+      user.comparePassword(req.body.password, (err, isMatch) => {
+        if (err) {
+          return res.status(400).send(err);
+        }
         if (isMatch) {
           const tokenObject = { _id: user._id, email: user.email };
           const token = jwt.sign(tokenObject, process.env.PASSPORT_SECRET);
@@ -66,8 +66,10 @@ router.post("/login", (req, res) => {
           res.status(401).send("Wrong password.");
         }
       });
-    }
-  });
+    })
+    .catch((error) => {
+      res.status(400).send(error);
+    });
 });
 
 module.exports = router;
