@@ -1,0 +1,17 @@
+{
+  "name": "new-course",
+  "version": "1.0.0",
+  "description": "This project is an online course system where teachers can log in to search, create, update, and delete online courses. As a student, you can register for courses. The project includes an account system and uses JWT for user authentication. <br> <br> | instructor | student | | --- | --- | | ![website demo](./instructor.gif)| ![website demo](./student.gif) |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && node app.js",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

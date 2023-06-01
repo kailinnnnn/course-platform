@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  list-style: none;
+}
+
+main .firstsection {
+  position: relative;
+}
+main .firstsection img {
+  display: block;
+  margin-left: auto;
+  height: 100vh;
+}
+main .firstsection .content {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  background-color: #c1dbcb;
+  height: 100vh;
+  width: 40%;
+  padding: 4rem 4rem;
+}
+main .firstsection .content .sectiontitle {
+  font-size: 32px;
+  font-weight: bold;
+}
+main .firstsection .content p {
+  font-size: 18px;
+  width: 85%;
+  margin-top: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+main .secondsection {
+  position: relative;
+}
+main .secondsection img {
+  display: block;
+  margin-right: auto;
+  height: 100vh;
+}
+main .secondsection .content {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: #cac6d2;
+  height: 100vh;
+  width: 40%;
+  padding: 4rem 4rem;
+}
+main .secondsection .content .sectiontitle {
+  font-size: 32px;
+  font-weight: bold;
+}
+main .secondsection .content p {
+  font-size: 18px;
+  width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+nav span {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+nav .right {
+  margin-left: auto;
+}
+
+.coursediv .alert {
+  padding: 2rem;
+}
+.coursediv .alert button {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #c1dbcb;
+  border-radius: 12px;
+}
+.coursediv .mycourse,
+.coursediv .mylearning {
+  background-color: #1c1d1f;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.coursediv .mycourse h1,
+.coursediv .mylearning h1 {
+  color: white;
+  padding: 3rem;
+  font-size: 3rem;
+}
+.coursediv .card {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  height: 20rem;
+}
+.coursediv .card .card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.coursediv .card .card-body .card-title {
+  padding: 1rem;
+  font-size: 24px;
+}
+.coursediv .card .card-body .card-text {
+  padding: 1rem;
+}
+.coursediv .card .card-body .count {
+  padding: 1rem;
+  font-weight: 400;
+}
+.coursediv .card .card-body button {
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: auto;
+}
+
+.profilediv .alert {
+  padding: 2rem;
+}
+.profilediv .profile {
+  background-color: #1c1d1f;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.profilediv .profile h1 {
+  color: white;
+  padding: 3rem;
+  font-size: 3rem;
+}
+.profilediv main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.profilediv main .picture {
+  width: 12rem;
+  height: 12rem;
+  margin-right: 2rem;
+}
+.profilediv main .picture img {
+  width: 100%;
+  height: 100%;
+}
+.profilediv main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.profilediv main .content span {
+  font-weight: 400;
+}
+.profilediv main .content .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.enroll {
+  padding: 2rem;
+}
+.enroll .search input {
+  width: 30%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-left: 1rem;
+  border-radius: 12px;
+}
+.enroll .search button {
+  width: 8rem;
+  height: 3rem;
+  margin-left: 1rem;
+  background-color: #c1dbcb;
+  border-radius: 12px;
+}
+.enroll .data .card {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  height: auto;
+}
+.enroll .data .card .card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.enroll .data .card .card-body .card-title {
+  padding: 1rem;
+  font-size: 24px;
+}
+.enroll .data .card .card-body .card-text {
+  padding: 0.75rem 1rem;
+  font-weight: 400;
+}
+.enroll .data .card .card-body .count {
+  padding: 0.75rem 1rem;
+  font-weight: 400;
+}
+.enroll .data .card .card-body .price {
+  padding: 0.75rem 1rem;
+}
+.enroll .data .card .card-body a {
+  margin: 0rem 1rem;
+  border-radius: 12px;
+  margin-top: 0.75rem;
+  padding: 1rem 1.5rem;
+  background-color: #c1dbcb;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.enroll .alert button {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #c1dbcb;
+  border-radius: 12px;
+}
+
+.post .handleerror {
+  padding: 2rem;
+}
+.post .handleerror button {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #c1dbcb;
+  border-radius: 12px;
+}
+.post .form-group header {
+  background-color: #1c1d1f;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.post .form-group header h1 {
+  color: white;
+  padding: 3rem;
+  font-size: 3rem;
+}
+.post .form-group .price,
+.post .form-group .content,
+.post .form-group .title {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+.post .form-group .price label,
+.post .form-group .content label,
+.post .form-group .title label {
+  font-size: 21px;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+.post .form-group .price input,
+.post .form-group .content input,
+.post .form-group .title input {
+  width: 70%;
+  height: 2rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+}
+.post .form-group .price textarea,
+.post .form-group .content textarea,
+.post .form-group .title textarea {
+  width: 70%;
+  height: 2rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+}
+.post .form-group button {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+.col-md-12 {
+  width: 100%;
+  height: calc(100vh - 67px);
+  background-color: #38473e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-md-12 .main {
+  width: 35rem;
+  height: 28rem;
+  background-color: white;
+  padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+.col-md-12 .main span {
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+.col-md-12 .main .form-group {
+  width: 100%;
+}
+.col-md-12 .main .form-group input {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-left: 1rem;
+}
+.col-md-12 .main .form-group input::-moz-placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 200;
+  font-size: 16px;
+}
+.col-md-12 .main .form-group input::placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 200;
+  font-size: 16px;
+}
+.col-md-12 .main .alert {
+  color: #e79494;
+  font-weight: 200;
+  font-size: 12px;
+}
+.col-md-12 .main button {
+  width: 100%;
+  height: 3rem;
+  background-color: #c1dbcb;
+  font-weight: thin;
+}
+
+.register {
+  width: 100%;
+  height: calc(100vh - 67px);
+  background-color: #38473e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+.register .word {
+  width: 35%;
+  padding: 0 2rem 0 1rem;
+}
+.register .word p {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+.register .main {
+  width: 65%;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 3.5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+.register .main span {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  font-weight: 200;
+}
+.register .main .form-group {
+  width: 100%;
+}
+.register .main .form-group input {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-left: 1rem;
+}
+.register .main .form-group input::-moz-placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 200;
+  font-size: 16px;
+}
+.register .main .form-group input::placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 200;
+  font-size: 16px;
+}
+.register .main .alert {
+  color: #e79494;
+  font-weight: 200;
+  font-size: 12px;
+}
+.register .main button {
+  width: 100%;
+  height: 3rem;
+  background-color: #c1dbcb;
+  font-weight: thin;
+}/*# sourceMappingURL=styles.css.map */
