@@ -2,10 +2,17 @@
 
 This project is an online course system where teachers can log in to search, create, update, and delete online courses. As a student, you can register for courses. The project includes an account system and uses JWT for user authentication.
 <br>
-<br>
-| instructor | student |
-| --- | --- |
-| ![website demo](./instructor.gif)| ![website demo](./student.gif) |
+
+- Implemented a CRUD-capable RESTful API using Express, storing data in MongoDB.
+- Utilized Joi for validating and specifying the format of input data.
+- Applied Bcrypt for hashing and validating passwords to enhance information security.
+- Implemented passport-jwt for JWT identity verification and authorization.
+- Handled cross-origin requests using the CORS package.
+  <br>
+  <br>
+  | instructor | student |
+  | --- | --- |
+  | ![website demo](./instructor.gif)| ![website demo](./student.gif) |
 
 <br>
 <br>
@@ -14,7 +21,7 @@ This project is an online course system where teachers can log in to search, cre
 
 ### Environment
 
-- Node.js/Express.js
+- Node.js / Express.js
 
 ### Database
 
@@ -22,15 +29,15 @@ This project is an online course system where teachers can log in to search, cre
 
 ### Third Party Library
 
-- passport.js
-- bcrypt
-- joi.js
+- passport-jwt
+- Bcrypt
+- Joi
 
 ## Frontend Technique
 
 - HTML
 - CSS (SCSS)
-- Javascript (React)
+- React
 - axios
 
 <br>
@@ -38,5 +45,4 @@ This project is an online course system where teachers can log in to search, cre
 
 ## Contect
 
-Kai-Lin Yang  
-kailinnnnn0408@gmail.com
+[LinkedIn](https://www.linkedin.com/in/kailinyang-6ab02423b/) [Gmail](kailinnnnn0408@gmail.com)
